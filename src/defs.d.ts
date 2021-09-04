@@ -1,1 +1,1 @@
-declare var mp: any;
+declare var alt: any;

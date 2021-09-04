@@ -26,7 +26,7 @@ export const eventable = () => {
               const callableMethod = this[callable]
               if (typeof this[callable] !== 'function') throw new Error(`Event[${eventName}] in ${this.constructor.name} is not callable!`)
   
-              event.forEach(eventName => mp.events.add(eventName, callableMethod))
+              event.forEach(eventName => alt.on(eventName, callableMethod))
 
               eventObject.func = callableMethod
 

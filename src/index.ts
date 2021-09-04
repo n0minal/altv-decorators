@@ -7,7 +7,7 @@ export * from './types'
 /**
  * The current enviroment
  */
-export const enviroment = typeof mp.game !== 'undefined' ? ENVIROMENT.CLIENTSIDE : ENVIROMENT.SERVERSIDE
+export const enviroment = typeof alt.WebView !== 'undefined' ? ENVIROMENT.CLIENTSIDE : ENVIROMENT.SERVERSIDE
 
 /**
  * A storage of commands which is called by decorator command
@@ -19,7 +19,5 @@ export const registeredCommands: CommandCollection = new Map<string, ICommand | 
  */
 export const registeredEvents: EventCollection = new Map<string, IEvent[]>()
 
-export * from './command'
-export * from './commandable'
 export * from './event'
 export * from './eventable'

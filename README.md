@@ -66,7 +66,7 @@ import { event, eventable } from 'altv-decorators'
 class NinjaEvents {
   @event("playerJoin")
   ninjaJoin(player: PlayerMp) {
-    mp.players.forEach(currentPlayer => currentPlayer.outputChatBox(`Ninja ${player.name} has just joined.`))
+    console.log(`Ninja ${player.name} has just joined.`))
   }
 }
 ```
