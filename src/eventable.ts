@@ -11,12 +11,12 @@ export const eventable = () => {
         // first we must call an inherited constructor
         super(...args)
 
-        // then we start record our events into Rage API
+        // then we start record our events into Altv API
         // check if class events has already registered
         if (!Reflect.getMetadata("design:eventlist:init", target.prototype)) {
           const events: EventCollection = Reflect.getMetadata("design:eventlist", target.prototype) || []
 
-          // register events in Rage API 
+          // register events in Altv API 
           events.forEach((eventObjects, eventName) => {
             eventObjects = eventObjects.map(eventObject => {
               const { event, callable } = eventObject

@@ -1,7 +1,7 @@
 import { registeredCommands, CommandCollection, ICommand } from "."
 
 /**
- * Decorator for adding commands to RAGE API
+ * Decorator for adding commands to ALTV API
  *
  * @param {string | string[]} cmd - command(s) name, which will be added to mp.events.addCommand
  * @param {string | { group?: string, desc?: string }} params - additional params, add to group or add to description
@@ -114,7 +114,7 @@ export const command = (
     newCommand.callable = callableMethod.toString()
 
     // store in target context storage our commands to pass them into constructor
-    // where we will can register them in Rage API
+    // where we will can register them in Altv API
     if (group) {
       const command = targetCommands.get(mainCmd)
       targetCommands.set(mainCmd, Array.isArray(command) ? [...command, newCommand] : [newCommand])

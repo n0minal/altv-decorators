@@ -1,7 +1,7 @@
 import { IEvent, EventCollection } from "./types"
 
 /**
- * Decorator for adding events into RAGE API
+ * Decorator for adding events into Altv API
  * 
  * @param {string | string[]} eventName - event(s) name, which will be added to mp.events.add
  * 

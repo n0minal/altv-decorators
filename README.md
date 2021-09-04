@@ -1,5 +1,5 @@
-# rage-decorators
-A useful lightweight library which helps to registry **server-side/client-side** events, commands via [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) for RageMP API 
+# altv-decorators
+A useful lightweight library which helps to registry **server-side/client-side** events, commands via [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) for AltvMP API 
 
 * [Installation](#installation)
 * [Examples](#examples)
@@ -8,16 +8,16 @@ A useful lightweight library which helps to registry **server-side/client-side**
 # Installation
 
 Via [npm](https://github.com/npm/cli):
-`$ npm i --save rage-decorators`
+`$ npm i --save altv-decorators`
 
 Via [yarn](https://yarnpkg.com/cli/install):
-`$ yarn add rage-decorators`
+`$ yarn add altv-decorators`
 
 # Examples
 
 **Ninja.ts** *command example*
 ```typescript
-import { command, commandable } from 'rage-decorators'
+import { command, commandable } from 'altv-decorators'
 
 @commandable()
 class Ninja {
@@ -60,7 +60,7 @@ export { Ninja }
 
 **NinjaEvents.ts** *event example*
 ```typescript
-import { event, eventable } from 'rage-decorators'
+import { event, eventable } from 'altv-decorators'
 
 @eventable()
 class NinjaEvents {
@@ -76,7 +76,7 @@ class NinjaEvents {
 Resolve any commands which passed to classes commandable
 
 ## **command(commandName, params)**
-Decorator for adding commands to RAGE API
+Decorator for adding commands to ALTV API
 **Parameters**
 * `commandName` [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)[] - The command(s) name, which will be added to mp.events.addCommand
 * `params` *(optional)* [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)

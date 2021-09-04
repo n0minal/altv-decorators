@@ -1,19 +1,19 @@
 {
-  "name": "rage-decorators",
+  "name": "altv-decorators",
   "version": "1.1.4",
-  "description": "A useful lightweight library which helps to registry server-side events, commands via decorators for RageMP API",
+  "description": "A useful lightweight library which helps to registry server-side events, commands via decorators for AltvMP API",
   "license": "MIT",
   "author": "READYTOMASSACRE",
   "main": "./lib/index.js",
   "typings": "./lib/typings/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/READYTOMASSACRE/rage-decorators.git"
+    "url": "git+https://github.com/wuzi/altv-decorators.git"
   },
   "bugs": {
-    "url": "https://github.com/READYTOMASSACRE/rage-decorators/issues"
+    "url": "https://github.com/wuzi/altv-decorators/issues"
   },
-  "homepage": "https://github.com/READYTOMASSACRE/rage-decorators#readme",
+  "homepage": "https://github.com/wuzi/altv-decorators#readme",
   "devDependencies": {},
   "dependencies": {
     "reflect-metadata": "^0.1.13"

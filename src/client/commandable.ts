@@ -10,12 +10,12 @@ export const commandable = (): any => {
         // first we must call an inherited constructor
         super(...args)
 
-        // then we start record our commands to Rage API
+        // then we start record our commands to Altv API
         // check if commands has already registered
         if (!Reflect.getMetadata("design:cmdlist:init", target.prototype)) {
           const commands: CommandCollection = Reflect.getMetadata("design:cmdlist", target.prototype) || []
 
-          // register commands in Rage API 
+          // register commands in Altv API 
           commands.forEach((command, mainCmd) => {
             // check if the command is a group command
             mp.events.add(
@@ -39,7 +39,7 @@ export const commandable = (): any => {
  * @param group (optional) - command name of group
  */
 const onPlayerCommand = (context: any, commands: ICommand | ICommand[], group?: string) => (input: string): void => {
-  // register commands in Rage API 
+  // register commands in Altv API 
   const commandArgs = input.split(/[ ]+/)
   const commandName = commandArgs.shift()
 

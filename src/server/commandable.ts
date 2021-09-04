@@ -10,12 +10,12 @@ export const commandable = (): any => {
         // first we must call an inherited constructor
         super(...args)
 
-        // then we start record our commands to Rage API
+        // then we start record our commands to Altv API
         // check if commands has already registered
         if (!Reflect.getMetadata("design:cmdlist:init", target.prototype)) {
           const commands: CommandCollection = Reflect.getMetadata("design:cmdlist", target.prototype) || []
 
-          // register commands in Rage API 
+          // register commands in Altv API 
           commands.forEach((command, mainCmd) => {
             // check if the command is a group command
             if (Array.isArray(command)) {
