@@ -20,5 +20,7 @@ export const registeredCommands: CommandCollection = new Map<string, ICommand | 
  */
 export const registeredEvents: EventCollection = new Map<string, IEvent[]>()
 
+export * from './command'
+export * from './commandable'
 export * from './event'
 export * from './eventable'

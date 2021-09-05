@@ -3,7 +3,7 @@ import { IEvent, EventCollection } from "./types"
 /**
  * Decorator for adding events into Altv API
  * 
- * @param {string | string[]} eventName - event(s) name, which will be added to mp.events.add
+ * @param {string | string[]} eventName - event(s) name
  * 
  * @example
  * decorator usage:

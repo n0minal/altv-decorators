@@ -1,5 +1,6 @@
 declare module "alt" {
   const on: any;
+  const emit: any;
   const Player: any;
-  export { Player, on };
+  export { Player, emit, on };
 }
