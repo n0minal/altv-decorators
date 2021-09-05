@@ -22,7 +22,7 @@
     "build": "tsc",
     "build:types": "tsc -p ./typescript/tsconfig.types.json",
     "build:check": "tsc --noEmit",
-    "postinstall": "yarn build"
+    "postinstall": "yarn build && yarn build:types"
   },
   "files": [
     "lib/**/*"
