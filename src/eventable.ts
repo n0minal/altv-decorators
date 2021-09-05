@@ -24,7 +24,7 @@ export const eventable = () => {
   
               // record a callable method
               // to manage in future
-              const callableMethod = this[callable]
+              const callableMethod = this[callable].bind(this)
               if (typeof this[callable] !== 'function') throw new Error(`Event[${eventName}] in ${this.constructor.name} is not callable!`)
   
               event.forEach(eventName => alt.on(eventName, callableMethod))
