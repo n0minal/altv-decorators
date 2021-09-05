@@ -8,7 +8,7 @@ export * from './types'
 /**
  * The current enviroment
  */
-export const enviroment = typeof (alt as any).Player.local !== 'undefined' ? ENVIROMENT.CLIENTSIDE : ENVIROMENT.SERVERSIDE
+export const enviroment = typeof alt.Player.local !== 'undefined' ? ENVIROMENT.CLIENTSIDE : ENVIROMENT.SERVERSIDE
 
 /**
  * A storage of commands which is called by decorator command
