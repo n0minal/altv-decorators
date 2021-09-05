@@ -1,4 +1,4 @@
-import alt from "alt"
+import * as alt from "alt"
 import { EventCollection } from "./types"
 import { registeredEvents } from "."
 
@@ -27,7 +27,7 @@ export const eventable = () => {
               const callableMethod = this[callable]
               if (typeof this[callable] !== 'function') throw new Error(`Event[${eventName}] in ${this.constructor.name} is not callable!`)
   
-              event.forEach(eventName => alt.on(eventName, callableMethod))
+              event.forEach(eventName => (alt as any).on(eventName, callableMethod))
 
               eventObject.func = callableMethod
 

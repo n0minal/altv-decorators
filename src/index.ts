@@ -1,5 +1,5 @@
 import 'reflect-metadata'
-import alt from "alt"
+import * as alt from 'alt'
 
 import { ENVIROMENT, CommandCollection, ICommand, EventCollection, IEvent } from './types'
 
@@ -8,7 +8,7 @@ export * from './types'
 /**
  * The current enviroment
  */
-export const enviroment = typeof alt.WebView !== 'undefined' ? ENVIROMENT.CLIENTSIDE : ENVIROMENT.SERVERSIDE
+export const enviroment = typeof (alt as any).Player.local !== 'undefined' ? ENVIROMENT.CLIENTSIDE : ENVIROMENT.SERVERSIDE
 
 /**
  * A storage of commands which is called by decorator command
