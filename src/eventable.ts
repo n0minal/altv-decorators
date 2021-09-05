@@ -1,3 +1,4 @@
+import alt from "alt"
 import { EventCollection } from "./types"
 import { registeredEvents } from "."
 

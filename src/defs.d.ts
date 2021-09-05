@@ -1,1 +1,5 @@
-declare var alt: any;
+declare module 'alt' {
+  const x: any;
+
+  export default x;
+}

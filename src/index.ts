@@ -1,4 +1,5 @@
 import 'reflect-metadata'
+import alt from "alt"
 
 import { ENVIROMENT, CommandCollection, ICommand, EventCollection, IEvent } from './types'
 
