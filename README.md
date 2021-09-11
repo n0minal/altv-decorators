@@ -35,7 +35,7 @@ import { key, keyable } from 'altv-decorators'
 @keyable()
 class NinjaKeys {
   @key('release', 82)
-  ninjaJoin(player: PlayerMp) {
+  ninjaReleaseT(player: PlayerMp) {
     console.log(`Ninja ${player.name} released T key.`))
   }
 }
