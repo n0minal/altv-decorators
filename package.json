@@ -1,7 +1,7 @@
 {
   "name": "altv-decorators",
   "version": "1.1.4",
-  "description": "A useful lightweight library which helps to registry server-side events, commands via decorators for AltvMP API",
+  "description": "A useful lightweight library which helps to registry events via decorators for AltvMP",
   "license": "MIT",
   "author": "READYTOMASSACRE",
   "main": "./lib/index.js",

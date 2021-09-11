@@ -7,16 +7,6 @@ export const enum ENVIROMENT {
 }
 
 /**
- * An interface of command entity
- */
-export interface ICommand {
-  cmd: string[];
-  desc: string[];
-  callable: string;
-  group?: string;
-}
-
-/**
  * An interface of event entity
  */
 export interface IEvent {
@@ -31,11 +21,6 @@ export interface IKey {
   callable: string;
   func?: Function;
 }
-
-/**
- * A collection of commands
- */
-export type CommandCollection = Map<string, ICommand | ICommand[]>;
 
 /**
  * A collection of events
