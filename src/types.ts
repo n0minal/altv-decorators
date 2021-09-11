@@ -10,27 +10,39 @@ export const enum ENVIROMENT {
  * An interface of command entity
  */
 export interface ICommand {
-  cmd: string[],
-  desc: string[]
-  callable: string,
-  group?: string
+  cmd: string[];
+  desc: string[];
+  callable: string;
+  group?: string;
 }
 
 /**
  * An interface of event entity
  */
 export interface IEvent {
-  event: string[]
-  callable: string
-  func?: Function
+  event: string[];
+  callable: string;
+  func?: Function;
+}
+
+export interface IKey {
+  code: number;
+  action: "press" | "release";
+  callable: string;
+  func?: Function;
 }
 
 /**
  * A collection of commands
  */
-export type CommandCollection = Map<string, ICommand | ICommand[]>
+export type CommandCollection = Map<string, ICommand | ICommand[]>;
 
 /**
  * A collection of events
  */
-export type EventCollection = Map<string, IEvent[]>
+export type EventCollection = Map<string, IEvent[]>;
+
+/**
+ * A collection of keys
+ */
+export type KeyCollection = Map<string, IKey[]>;

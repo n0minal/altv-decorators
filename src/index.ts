@@ -1,7 +1,7 @@
 import 'reflect-metadata'
 import * as alt from 'alt'
 
-import { ENVIROMENT, CommandCollection, ICommand, EventCollection, IEvent } from './types'
+import { ENVIROMENT, CommandCollection, ICommand, EventCollection, IEvent, KeyCollection, IKey } from './types'
 
 export * from './types'
 
@@ -20,5 +20,12 @@ export const registeredCommands: CommandCollection = new Map<string, ICommand | 
  */
 export const registeredEvents: EventCollection = new Map<string, IEvent[]>()
 
+/**
+ * A storage of keys which is called by decorator key
+ */
+export const registeredKeys: KeyCollection = new Map<string, IKey[]>()
+
 export * from './event'
 export * from './eventable'
+export * from './key';
+export * from './keyable';
