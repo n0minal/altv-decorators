@@ -14,7 +14,9 @@
     "url": "https://github.com/wuzi/altv-decorators/issues"
   },
   "homepage": "https://github.com/wuzi/altv-decorators#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
   "dependencies": {
     "reflect-metadata": "^0.1.13"
   },
