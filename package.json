@@ -1,6 +1,6 @@
 {
   "name": "altv-decorators",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "A useful lightweight library which helps to registry events via decorators for AltvMP",
   "license": "MIT",
   "author": "READYTOMASSACRE",
